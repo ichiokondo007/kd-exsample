@@ -1,0 +1,24 @@
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: kd
+      MONGO_INITDB_ROOT_PASSWORD: kd
+      MONGO_INITDB_DATABASE: kd-exsample
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - ./kd-mongodb/init-scripts:/docker-entrypoint-initdb.d
+    networks:
+      - kd-network
+
+networks:
+  kd-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
+    driver: local
