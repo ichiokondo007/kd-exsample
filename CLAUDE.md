@@ -2,6 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+
 ## プロジェクト概要
 
 このリポジトリは、TypeScriptとExpressを利用したモノレポ構造のサンプルプロジェクトです。PNPMとTurborepoを使用して効率的なビルドとパッケージ管理を実現しています。
