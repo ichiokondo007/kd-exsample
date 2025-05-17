@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "validate-deps": "pnpm dlx turbo-deps validate",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test"
